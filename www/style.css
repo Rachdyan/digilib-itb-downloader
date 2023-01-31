@@ -1,0 +1,76 @@
+#dummy {
+  display: none;
+}
+
+.container-fluid {
+  margin-top: 8rem;
+}
+
+h1{
+  color: #F8F7F3;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  color: #F8F7F3;
+  font-weight: 300;
+  font-size: 29.5px;
+  font-style: oblique;
+}
+
+#go{
+  scale: 1.1;
+}
+
+#div_button{
+  margin-top: 27px;
+}
+
+
+.modal-dialog{ 
+  width:100%; 
+}
+
+
+.modal-header .close {
+  visibility: hidden;
+}
+
+.modal-title {
+    position: absolute;
+    margin-top: 0px;
+}
+
+
+.modal-body{
+  text-align: center;
+}
+
+
+#summary {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+tfoot {
+  display: none;
+}
+
+button#merge_download {
+    margin-top: 0.6em;
+}
+
+div#merge_success {
+    margin-top: 0.5em;
+}
+
+button#download_button {
+    margin-top: 0.5em;
+}
+
+i.glyphicon.glyphicon-warning-sign {
+    margin-top: 0.5em;
+}
+

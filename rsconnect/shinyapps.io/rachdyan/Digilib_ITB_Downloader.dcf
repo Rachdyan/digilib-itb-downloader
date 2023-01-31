@@ -1,0 +1,13 @@
+name: Digilib_ITB_Downloader
+title: Digilib_ITB_Downloader
+username:
+account: rachdyan
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 8167053
+bundleId: 6789862
+url: https://rachdyan.shinyapps.io/Digilib_ITB_Downloader/
+when: 1675092306.10742
+lastSyncTime: 1675092306.10743
+asMultiple: FALSE
+asStatic: FALSE
