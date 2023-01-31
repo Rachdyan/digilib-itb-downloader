@@ -1,6 +1,6 @@
 # Digilib ITB Downloader
 
-A shiny application for downloading publication from ITB Digital Library (https://digilib.itb.ac.id/).
+A shiny application for downloading publications from ITB Digital Library (https://digilib.itb.ac.id/).
 
 Live version of the app can be seen here: https://rachdyan.shinyapps.io/Digilib_ITB_Downloader
 
