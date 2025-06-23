@@ -31,7 +31,10 @@ bs_card <- function(content){
 
 ## Function to get direct download link from each file
 get_link_akhir <- function(link){
-  link_akhir <- read_html(link) %>% html_nodes("div") %>%  html_attr("data-url")
+  link_akhir <- read_html(link) %>% 
+    # html_nodes("div") %>%  
+    html_nodes("p") %>%  
+    html_attr("data-url")
 }
 
 ## Get the link of each file
@@ -39,6 +42,9 @@ get_link_awal <- function(page){
   link_awal <- page %>% html_nodes("div[class = 'container']") %>% 
     html_nodes("div[class = 'row']")  %>% html_nodes("div[class = 'col-lg-10']") %>%
     html_nodes("a") %>% html_attr("href")
+  link_awal <- link_awal[!str_detect(link_awal, "readonflip") & !str_detect(link_awal, "summarize") ]
+  # print(link_awal)
+  link_awal
 }
 
 ## Get the title of the publication
@@ -55,7 +61,7 @@ get_penulis <- function(page){
 ## Get the publication's file number
 get_jumlah_file <- function(page){
   jumlah <- page %>% html_nodes("table[class = 'table table-sm table-hover text-sm']") %>% 
-    html_node("tr:nth-child(10)") %>%  html_node("td:nth-child(3)") %>% html_text2()
+    html_node("tr:nth-child(11)") %>%  html_node("td:nth-child(3)") %>% html_text2()
 }
 
 ## Get the title of each file

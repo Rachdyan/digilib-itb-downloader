@@ -133,6 +133,7 @@ server <- function(input, output, session){
   judul_bab <- reactive(get_judul_bab(page()))
   
   ## Get the specific download link for each of the file
+  # print("Getting link akhir")
   link_akhir <- reactive(
     map_chr(link_list(), get_link_akhir)
   )
